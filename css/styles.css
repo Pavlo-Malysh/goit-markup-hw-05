@@ -68,11 +68,11 @@ img {
     color: #fff;
 }
 
-.page-container {
+/* .page-container {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-}
+} */
 
 .main {
     flex-grow: 1;
