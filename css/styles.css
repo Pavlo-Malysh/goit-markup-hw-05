@@ -711,7 +711,7 @@ img {
 }
 
 .modal-check-item {
-    display: block;
+    display: inline-flex;
     width: 16px;
     height: 16px;
     border-radius: 2px;
