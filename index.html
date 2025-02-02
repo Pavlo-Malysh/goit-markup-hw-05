@@ -43,7 +43,7 @@
                 <div class="container">
                     <h1 class="hero-title">Effective Solutions
                         for Your Business</h1>
-                    <button class="button" type="button">Order service</button>
+                    <button class="button" type="button" data-modal-open>Order service</button>
                 </div>
             </section>
 
@@ -319,7 +319,7 @@
                         &
                         growth solutions.</p>
                 </div>
-                <div>
+                <div class="footer-messenger">
                     <p class="subtitle-footer">Social media</p>
                     <ul class="icon-footer-list">
                         <li class="icon-teams"><a class="icon-link" href=""><svg class="icon-message" width="24"
@@ -340,11 +340,22 @@
                                 </svg></a></li>
                     </ul>
                 </div>
+                <div class="footer-form-item">
+                    <p class="subtitle-footer">Subscribe</p>
+                    <form class="footer-form">
+                        <label class="footer-field"> <input class="footer-input" type="email" name="footer-email" id=""
+                                placeholder="E-mail"></label>
+                        <button class="footer-btn" type="submit">Subscribe <svg class="footer-subscribe-icon" width="24"
+                                height="24">
+                                <use href="./images/icons.svg#icon-subscribe"></use>
+                            </svg></button>
+                    </form>
+                </div>
             </div>
         </footer>
-        <div class="backdrop is-open">
+        <div class="backdrop" data-modal>
             <div class="modal">
-                <button class="modal-close-btn" type="submit">
+                <button class="modal-close-btn" type="button" data-modal-close>
                     <svg class="modal-icon-close" width="8" height="8">
                         <use href="./images/icons-modal.svg#icon-close"></use>
                     </svg>
@@ -355,8 +366,7 @@
                     <div class="modal-field">
                         <label class="modal-label" for="user-id">Name</label>
                         <div class="input-wrap">
-                            <input class="modal-input" type="text" name="user-name" id="user-id"
-                                placeholder="Enter your name">
+                            <input class="modal-input" type="text" name="user-name" id="user-id">
                             <svg class="modal-icons" width="18" height="18">
                                 <use href="./images/icons.svg#icon-person"></use>
                             </svg>
@@ -365,8 +375,7 @@
                     <div class="modal-field">
                         <label class="modal-label" for="user-tel">Phone</label>
                         <div class="input-wrap">
-                            <input class="modal-input" type="tel" name="user-tel" id="user-tel"
-                                placeholder="Enter your phone">
+                            <input class="modal-input" type="tel" name="user-tel" id="user-tel">
                             <svg class="modal-icons" width="18" height="24">
                                 <use href="./images/icons.svg#icon-phone"></use>
                             </svg>
@@ -375,8 +384,7 @@
                     <div class="modal-field">
                         <label class="modal-label" for="user-email">Email</label>
                         <div class="input-wrap">
-                            <input class="modal-input" type="email" name="user-email" id="user-email"
-                                placeholder="Enter your email">
+                            <input class="modal-input" type="email" name="user-email" id="user-email">
                             <svg class="modal-icons" width="18" height="24">
                                 <use href="./images/icons.svg#icon-email"></use>
                             </svg>
@@ -387,15 +395,18 @@
                         <textarea class="modal-textarea" name="comment" id="user-comment" rows="10"
                             placeholder="Text input"></textarea>
                     </div>
+                    <div>
 
-                    <input class="modal-check visually-hidden" type="checkbox" name="policy" id="policy" value="true">
-                    <label class="modal-label modal-checkbox" for="policy"><span class="modal-check-item"><svg
-                                class="modal-check-icon" width="10" height="8">
-                                <use href="./images/icons.svg#icon-check"></use>
-                            </svg></span>I
-                        accept the terms
-                        and conditions of the
-                        <a class="modal-check-link" href="">Privacy Policy</a></label>
+                        <input class="modal-check visually-hidden" type="checkbox" name="policy" id="policy"
+                            value="true">
+                        <label class="modal-label modal-checkbox" for="policy"><span class="modal-check-item"><svg
+                                    class="modal-check-icon" width="10" height="8">
+                                    <use href="./images/icons.svg#icon-check"></use>
+                                </svg></span>I
+                            accept the terms
+                            and conditions of the
+                            <a class="modal-check-link" href="">Privacy Policy</a></label>
+                    </div>
 
 
 
@@ -405,6 +416,8 @@
             </div>
         </div>
     </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
